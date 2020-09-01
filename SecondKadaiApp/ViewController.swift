@@ -8,13 +8,21 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let reViewController: ReViewController = segue.destination as! ReViewController
+        
+        reViewController.name = "田中"
+    }
 
-
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
 }
 
