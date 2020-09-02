@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         let reViewController: ReViewController = segue.destination as! ReViewController
-        reViewController.name = ""
+        reViewController.name = textField.text!
     }
 
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
