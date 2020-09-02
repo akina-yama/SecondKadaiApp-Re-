@@ -11,15 +11,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
         let reViewController: ReViewController = segue.destination as! ReViewController
-        
-        reViewController.name = "田中"
+        reViewController.name = ""
     }
 
     @IBAction func unwind(_ segue: UIStoryboardSegue) {

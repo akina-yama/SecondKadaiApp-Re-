@@ -12,18 +12,15 @@ class ReViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
-    var name:String = "田中"
+    var name:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         label.text = "こんにちわ、\(name)さん"
 
         // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -31,7 +28,6 @@ class ReViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
     */
 
 }
