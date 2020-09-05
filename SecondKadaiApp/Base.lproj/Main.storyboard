@@ -71,15 +71,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAc-B5-HEY">
-                                <rect key="frame" x="142" y="220.5" width="130" height="87.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAc-B5-HEY">
+                                <rect key="frame" x="142" y="263" width="130" height="45"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="3k2-Ky-gw5" kind="unwind" unwindAction="unwind:" id="6u4-gu-PkI"/>
+                                    <segue destination="3k2-Ky-gw5" kind="unwind" unwindAction="unwind:" id="bqy-9C-Yn1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9F-CK-Uvz">
-                                <rect key="frame" x="119" y="100" width="176" height="20.5"/>
+                                <rect key="frame" x="57" y="122" width="300" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="Nwn-D4-brb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="YNd-dd-I0W"/>
+                                    <constraint firstAttribute="width" constant="300" id="lgs-P5-PYU"/>
+                                    <constraint firstAttribute="height" constant="25" id="s4F-Zx-Q5j"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -88,12 +94,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xAc-B5-HEY" firstAttribute="leading" secondItem="Bne-3R-OdY" secondAttribute="leadingMargin" constant="122" id="4a1-DZ-IDj"/>
+                            <constraint firstItem="k9F-CK-Uvz" firstAttribute="leading" secondItem="Bne-3R-OdY" secondAttribute="leadingMargin" constant="137" id="4zH-RD-qVb"/>
                             <constraint firstItem="wSa-eK-o6C" firstAttribute="top" secondItem="xAc-B5-HEY" secondAttribute="bottom" constant="500" id="9PP-f1-sbo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="k9F-CK-Uvz" secondAttribute="trailing" constant="99" id="AiM-tf-Whh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xAc-B5-HEY" secondAttribute="trailing" constant="122" id="OHC-Gp-Kw8"/>
-                            <constraint firstItem="xAc-B5-HEY" firstAttribute="top" secondItem="k9F-CK-Uvz" secondAttribute="bottom" constant="100" id="VYt-PA-inw"/>
-                            <constraint firstItem="k9F-CK-Uvz" firstAttribute="leading" secondItem="Bne-3R-OdY" secondAttribute="leadingMargin" constant="99" id="aQj-lM-Jte"/>
-                            <constraint firstItem="k9F-CK-Uvz" firstAttribute="top" secondItem="YyQ-uQ-avE" secondAttribute="bottom" constant="100" id="uSD-4D-ACg"/>
+                            <constraint firstItem="k9F-CK-Uvz" firstAttribute="leading" secondItem="Bne-3R-OdY" secondAttribute="leadingMargin" constant="37" id="dKO-vg-j41"/>
+                            <constraint firstItem="k9F-CK-Uvz" firstAttribute="top" secondItem="YyQ-uQ-avE" secondAttribute="bottom" constant="122" id="nrx-id-BoN"/>
+                            <constraint firstItem="xAc-B5-HEY" firstAttribute="top" secondItem="k9F-CK-Uvz" secondAttribute="bottom" constant="100" id="wxF-qH-00r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yIy-Ui-hDT"/>
