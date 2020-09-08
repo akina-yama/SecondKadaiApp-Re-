@@ -17,7 +17,7 @@ class ReViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = "こんにちわ、\(name)さん"
+        label.text = "こんにちは、\(name)さん"
 
         // Do any additional setup after loading the view.
     }
